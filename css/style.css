@@ -17,6 +17,8 @@ body {
 :root {
 
     --rojo: #fa573a;
+    --gris: #ccc;
+
 }
 
 a {
@@ -27,6 +29,12 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+
+h1, h2 {
+
+    font-family: 2em;
+    font-family: 'Handlee', cursive;
 }
 
 .row {
@@ -116,14 +124,12 @@ header .hamburguesa {
     padding: 15% 10%;
     color: white;
     line-height: 2.3em;
-
 }
 
 .hero > div h1 {
 
     font-size: 2em;
     font-family: 'Handlee', cursive;
-
 }
 
 .hero > div h2 {
@@ -132,28 +138,19 @@ header .hamburguesa {
     font-size: 1.25em;
 }
 
-
-
 .hero .boton {
 
     background-color: var(--rojo);
     padding: .9em 1.5em;
     display: inline-block;  
     border: 2px solid var(--rojo);
-    transition: transform .5s ease-out;
-
+ 
 }
 
 .hero .boton:hover {
 
     background: transparent;
     color: var(--rojo);
-
-}
-
-.hero .boton a:hover {
-    
-    
 
 }
 
@@ -169,18 +166,94 @@ header .hamburguesa {
     font-size: 1.5em;
 }
 
+/*----our services----*/
+
+section {
+
+    padding: 50px 0px;
+}
+
+main section h2 {
+
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+main section .underline {
+
+    position: relative;
+    width: 9.375em;
+    margin: 0 auto;
+    color: var(--rojo);
+}
+
+main section .underline hr {
+
+    border-color: var(--rojo);
+    margin-bottom: 50px;
+}
 
 
+main section .underline span {
 
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+    left: 67px;
+}
 
+main section .flex {
 
+    display: flex;
+   flex-flow: row wrap;
+}
 
+main section .flex article {
 
+    width: 33%;
+    border-left: 1px solid var(--gris);
+    padding: 0px 30px;
+    line-height: 1.5em;
+}
 
+main #ourservices article h3 {
 
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 1.2em;
+    color: rgba(0,0,0,.7);
+}
 
+main #ourservices article .icon {
 
+    font-size: 2em;
+    border: 2px solid var(--rojo);
+    color: var(--rojo);
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
+main .enlace {
+
+    color: var(--rojo);
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+main .enlace i {
+
+    transition: all .5s ease-in-out;
+}
+
+main .enlace i:hover   {
+
+    transform: translateX(10px);
+
+}
 
 
 
@@ -195,6 +268,12 @@ header .hamburguesa {
 
     header .submenu .row div:nth-child(3), header .submenu .row div:nth-child(4) {
         text-align: center;
+    }
+
+    main section .flex article {
+
+        width: 50%;
+        margin-bottom: 50px;
     }
 }
 
@@ -244,4 +323,24 @@ header .hamburguesa {
 
         height: 450px;
     }
+
+        main section .flex article {
+
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    main section .flex article {
+
+    border-left: none;
+    border-bottom: 2px solid var(--gris);
+    padding-bottom: 30px;
+
+}
+
+    main section .flex article:last-child {
+
+        width: 100%;
+    }
+
 }
