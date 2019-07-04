@@ -249,7 +249,7 @@ main .enlace i {
     transition: all .5s ease-in-out;
 }
 
-main .enlace i:hover  {
+main .enlace i:hover   {
 
     transform: translateX(10px);
 
