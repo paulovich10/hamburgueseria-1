@@ -121,7 +121,7 @@ header .hamburguesa {
 
 .hero > div {
     
-    padding: 15% 10%;
+    padding: 15% 0%;
     color: white;
     line-height: 2.3em;
 }
@@ -313,6 +313,7 @@ main .enlace i:hover   {
         text-align: center;
         padding: 20px;
         border-bottom: 1px solid #aaa;
+        margin-right: 0px;
     }
 
     header nav .menu li:last-child {
@@ -336,11 +337,21 @@ main .enlace i:hover   {
     border-bottom: 2px solid var(--gris);
     padding-bottom: 30px;
 
-}
+    }
 
     main section .flex article:last-child {
 
         width: 100%;
     }
+
+}
+
+@media (max-width: 1100px) {
+
+    .hero > div {
+    
+    padding: 15% 10px;
+   
+}
 
 }
